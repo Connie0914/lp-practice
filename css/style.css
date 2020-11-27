@@ -1,0 +1,476 @@
+@charset "utf-8";
+
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/**************ここまでリセットcss***************/
+
+/*? 共通のスタイル */
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 0;
+    text-align: center;
+}
+
+img {
+    /* display: block; */
+    width: 100%;
+}
+
+.wrap {
+    width: 80%;
+    margin: 0 auto 50px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.bg-black {
+    color: white;
+    background-color: black;
+}
+
+.bg-white {
+    color: black;
+    background-color: white;
+
+}
+
+
+/*? headerのスタイル */
+
+header {
+    height: 70px;
+    background: #000;
+}
+
+.header-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 35px;
+    color: #f2f2f2;
+    line-height: 70px;
+}
+
+.header-nav li {
+    display: inline-block;
+    margin-right: 35px;
+    font-size: 16px;
+}
+
+.header-nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+/*? body(タイトル)のスタイル */
+.eyecatch {
+    height: 800px;
+    background: url(../img/eyecatch.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.eyecatch > p {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+.news-content {
+    position: absolute;
+    height: 60px;
+    padding: 5px;
+}
+
+.news-title {
+    /* padding: 5px 20px 20px 5px; */
+    width: 50%;
+    line-height: 1.5;
+}
+
+.news {
+    box-sizing: content-box;
+    padding:5px 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+/*? aboutのスタイル */
+.about {
+    color: white;
+    background: url(../img/mission-img.jpg) no-repeat;
+    background-size: 50%;
+    background-position: 90% 100%;
+    background-color: black;
+    padding:150px 150px;
+    position: relative;
+}
+
+.about h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.about p {
+    line-height: 1.5;
+}
+
+.about-img {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 50px;
+    width: 50%;
+    height: 50%;
+}
+
+/*? buttonのスタイル */
+
+.button {
+    background-color: white;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+/*? serviceのスタイル */
+.service {
+    margin:100px 0;
+    background-color: #ccc;
+}
+
+.service h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.service-content {
+    background-color: white;
+    padding: 70px;
+    width: 40%;
+}
+
+
+.service-content p,
+.service-content h5 {
+    margin-bottom: 20px;
+}
+
+.service img {
+    width: 50%;
+    height: 50%;
+}
+
+.service2{
+    text-align: right;
+}
+
+/*? companyのスタイル */
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.details img {
+    height: 200px;
+}
+
+.company {
+    width: 45%;
+    background-position: left;
+    position: relative;
+}
+
+.company h3,
+.company p {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+}
+
+.recruit {
+    width: 45%;
+    /* background-size: 40% 10%; */
+    background-position: right;
+    position: relative;
+}
+
+.recruit h3,
+.recruit p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+}
+
+.details p {
+    font-size: 18px;
+    top: 60%;
+}
+
+.faq {
+    color: white;
+    background-color: black;
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    padding: 50px;
+    position: relative;
+}
+
+.faq h3 {
+    font-size: 30px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*? contactのスタイル */
+
+.contact {
+    height: 600px;
+    color: white;
+    background: url(../img/contact-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-content: flex;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 30px;
+    padding: 200px 0 10px;
+}
+
+.contact h5 {
+    font-size: 18px;
+}
+
+.contact h2 {
+    opacity: 0.8;
+    font-size: 40px;
+    font-weight: lighter;
+    padding: 50px 0;
+}
+
+
+.button2 {
+    color: white;
+    background-color: transparent;
+    border: 0.5px solid white;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+
+/*? footerのスタイル */
+.footer {
+    height: 50px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    background: black;
+}
