@@ -287,31 +287,32 @@ header {
 /*? aboutのスタイル */
 .about {
     color: white;
-    background: url(../img/mission-img.jpg) no-repeat;
-    background-size: 50%;
-    background-position: 90% 100%;
     background-color: black;
     padding:150px 150px;
     position: relative;
+    margin-bottom: 200px;
 }
 
 .about h1 {
     font-size: 30px;
     margin-bottom: 40px;
+    z-index: 2;
 }
 
 .about p {
     line-height: 1.5;
+    z-index: 2;
 }
 
 .about-img {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 70%;
     transform: translate(-50%, -50%);
     margin-bottom: 50px;
     width: 50%;
     height: 50%;
+    z-index: 1;
 }
 
 /*? buttonのスタイル */
