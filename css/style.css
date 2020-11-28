@@ -319,7 +319,7 @@ header {
 .button {
     background-color: white;
     border: none;
-    padding: 10px 30px;
+    padding: 10px 40px;
     margin-top: 30px;
 }
 
@@ -327,6 +327,7 @@ header {
 .service {
     margin:100px 0;
     background-color: #ccc;
+    padding-bottom: 300px;
 }
 
 .service h2 {
@@ -335,13 +336,40 @@ header {
     padding: 10px;
 }
 
+.service2{
+    text-align: right;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+.service1 {
+    position: relative;
+}
+
+.service-content-right {
+    background-color: white;
+    padding: 70px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
 .service-content {
     background-color: white;
     padding: 70px;
-    width: 40%;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
 }
 
 
+.service-content-right p,
+.service-content-right h5,
 .service-content p,
 .service-content h5 {
     margin-bottom: 20px;
@@ -352,8 +380,14 @@ header {
     height: 50%;
 }
 
-.service2{
+.service button {
+    border: 1px solid black;
     text-align: right;
+}
+
+.service .button {
+    display: block;
+    margin: 0 0 0 auto;
 }
 
 /*? companyのスタイル */
